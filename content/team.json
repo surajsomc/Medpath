@@ -1,0 +1,9 @@
+{
+  "members": [
+    {
+      "name": "Team Member 1",
+      "role": "President",
+      "bio": "Bio information here"
+    }
+  ]
+}

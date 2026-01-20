@@ -1,0 +1,11 @@
+{
+  "events": [
+    {
+      "title": "Sample Event",
+      "date": "2024-01-15",
+      "time": "6:00 PM",
+      "location": "UCSD Campus",
+      "description": "This is a sample event description."
+    }
+  ]
+}

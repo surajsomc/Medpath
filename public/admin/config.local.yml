@@ -1,0 +1,185 @@
+# Local/dev: no login. Use with npx decap-server. Overrides config.yml when not prod.
+local_backend: true
+
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: public/images
+public_folder: /images
+
+collections:
+  - name: "home"
+    label: "Home Page"
+    folder: "content"
+    create: false
+    slug: "home"
+    fields:
+      - { label: "Hero Title", name: "hero.title", widget: "string" }
+      - { label: "Hero Subtitle", name: "hero.subtitle", widget: "string", required: false }
+      - { label: "Logo URL", name: "logo", widget: "string", required: false }
+      - { label: "Description", name: "description", widget: "text" }
+
+  - name: "about"
+    label: "About Page"
+    folder: "content"
+    create: false
+    slug: "about"
+    format: "md"
+    fields:
+      - { label: "Title", name: "title", widget: "string", required: false }
+      - { label: "Content", name: "body", widget: "markdown" }
+
+  - name: "team"
+    label: "Team Members"
+    files:
+      - label: "Team List"
+        name: "team"
+        file: "content/team.json"
+        fields:
+          - label: "Members"
+            name: "members"
+            widget: "list"
+            fields:
+              - label: "Name"
+                name: "name"
+                widget: "string"
+              - label: "Role"
+                name: "role"
+                widget: "string"
+              - label: "Bio"
+                name: "bio"
+                widget: "text"
+                required: false
+
+  - name: "events"
+    label: "Events"
+    files:
+      - label: "Events List"
+        name: "events"
+        file: "content/events.json"
+        fields:
+          - label: "Events"
+            name: "events"
+            widget: "list"
+            fields:
+              - label: "Title"
+                name: "title"
+                widget: "string"
+              - label: "Date"
+                name: "date"
+                widget: "datetime"
+              - label: "Time"
+                name: "time"
+                widget: "string"
+                required: false
+              - label: "Location"
+                name: "location"
+                widget: "string"
+                required: false
+              - label: "Description"
+                name: "description"
+                widget: "text"
+
+  - name: "advising"
+    label: "Advising Page"
+    folder: "content"
+    create: false
+    slug: "advising"
+    format: "md"
+    fields:
+      - { label: "Title", name: "title", widget: "string", required: false }
+      - { label: "Content", name: "body", widget: "markdown" }
+      - label: "Links"
+        name: "links"
+        widget: "list"
+        required: false
+        fields:
+          - label: "Title"
+            name: "title"
+            widget: "string"
+          - label: "URL"
+            name: "url"
+            widget: "string"
+
+  - name: "resources"
+    label: "Resources"
+    folder: "content"
+    create: false
+    slug: "resources"
+    fields:
+      - label: "Sections"
+        name: "sections"
+        widget: "list"
+        fields:
+          - label: "Title"
+            name: "title"
+            widget: "string"
+          - label: "Path"
+            name: "path"
+            widget: "string"
+          - label: "Description"
+            name: "description"
+            widget: "text"
+            required: false
+          - label: "Subsections"
+            name: "subsections"
+            widget: "list"
+            required: false
+            fields:
+              - label: "Title"
+                name: "title"
+                widget: "string"
+              - label: "Path"
+                name: "path"
+                widget: "string"
+
+  - name: "contact"
+    label: "Contact Page"
+    folder: "content"
+    create: false
+    slug: "contact"
+    fields:
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Email", name: "email", widget: "string", required: false }
+      - label: "Google Form"
+        name: "googleForm"
+        widget: "object"
+        required: false
+        fields:
+          - label: "Form URL"
+            name: "googleFormUrl"
+            widget: "string"
+            required: false
+            hint: "Get the embed URL from Google Forms: Send → HTML (</>) → Copy the src URL from the iframe"
+          - label: "Form Title"
+            name: "formTitle"
+            widget: "string"
+            required: false
+            default: "Contact Us"
+          - label: "Form Description"
+            name: "formDescription"
+            widget: "text"
+            required: false
+          - label: "Form Height (pixels)"
+            name: "formHeight"
+            widget: "number"
+            required: false
+            default: 1200
+            hint: "Height of the embedded form in pixels"
+      - label: "Social Links"
+        name: "socialLinks"
+        widget: "object"
+        fields:
+          - label: "Instagram"
+            name: "instagram"
+            widget: "string"
+            required: false
+          - label: "Twitter"
+            name: "twitter"
+            widget: "string"
+            required: false
+          - label: "Facebook"
+            name: "facebook"
+            widget: "string"
+            required: false

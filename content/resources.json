@@ -1,0 +1,93 @@
+{
+  "sections": [
+    {
+      "title": "Pre-Med Guide",
+      "path": "/resources/pre-med-guide",
+      "description": "Comprehensive guide for pre-medical students",
+      "subsections": [
+        {
+          "title": "Overview",
+          "path": "/resources/pre-med-guide"
+        },
+        {
+          "title": "Application Process",
+          "path": "/resources/pre-med-guide/application"
+        },
+        {
+          "title": "Course Requirements",
+          "path": "/resources/pre-med-guide/courses"
+        },
+        {
+          "title": "Extracurricular Activities and Research",
+          "path": "/resources/pre-med-guide/extracurriculars"
+        },
+        {
+          "title": "Letters of Recommendation",
+          "path": "/resources/pre-med-guide/letters"
+        },
+        {
+          "title": "MCAT Exam",
+          "path": "/resources/pre-med-guide/mcat"
+        },
+        {
+          "title": "Statistics",
+          "path": "/resources/pre-med-guide/statistics"
+        },
+        {
+          "title": "Other FAQs",
+          "path": "/resources/pre-med-guide/faqs"
+        }
+      ]
+    },
+    {
+      "title": "Recommendations (from Former Bruins)",
+      "path": "/resources/recommendations",
+      "description": "Recommendations from former UCSD students",
+      "subsections": [
+        {
+          "title": "Overview",
+          "path": "/resources/recommendations"
+        },
+        {
+          "title": "Academic Programs",
+          "path": "/resources/recommendations/academic"
+        },
+        {
+          "title": "Clinical Volunteering",
+          "path": "/resources/recommendations/clinical"
+        },
+        {
+          "title": "Research Experiences",
+          "path": "/resources/recommendations/research"
+        }
+      ]
+    },
+    {
+      "title": "Transfer Students",
+      "path": "/resources/transfer-students",
+      "description": "Resources specifically for transfer students",
+      "subsections": [
+        {
+          "title": "Overview",
+          "path": "/resources/transfer-students"
+        },
+        {
+          "title": "Getting Clinical Experiences",
+          "path": "/resources/transfer-students/clinical"
+        },
+        {
+          "title": "Research",
+          "path": "/resources/transfer-students/research"
+        },
+        {
+          "title": "MCAT",
+          "path": "/resources/transfer-students/mcat"
+        },
+        {
+          "title": "Application Tips",
+          "path": "/resources/transfer-students/application"
+        }
+      ]
+    }
+  ]
+}

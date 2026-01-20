@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Content Manager</title>
+</head>
+<body>
+  <script>
+    (function() {
+      var h = window.location.hostname;
+      var isLocal = h === 'localhost' || h === '127.0.0.1' || h === '[::1]' || /^127\./.test(h) || /[?&]backend=local/.test(window.location.search);
+      var requireLogin = !isLocal;
+
+      var link = document.createElement('link');
+      link.rel = 'cms-config-url';
+      link.type = 'text/yaml';
+      link.href = requireLogin ? '/admin/config.yml' : '/admin/config.local.yml';
+      document.head.appendChild(link);
+
+      function loadDecap() {
+        var s = document.createElement('script');
+        s.src = 'https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js';
+        document.body.appendChild(s);
+      }
+
+      if (requireLogin) {
+        var id = document.createElement('script');
+        id.src = 'https://identity.netlify.com/v1/netlify-identity-widget.js';
+        id.onload = function() {
+          if (window.netlifyIdentity) {
+            window.netlifyIdentity.on('init', function(user) {
+              if (!user) {
+                window.netlifyIdentity.on('login', function() { document.location.href = '/admin/'; });
+              }
+            });
+          }
+          loadDecap();
+        };
+        document.body.appendChild(id);
+      } else {
+        loadDecap();
+      }
+    })();
+  </script>
+</body>
+</html>

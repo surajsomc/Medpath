@@ -1,20 +1,14 @@
 ---
-title: Advising
-links:
-  - title: "1-on-1 Advising"
-    url: "https://docs.google.com/document/d/1S2hMFgacn2F-f9KihZFy16RAw06CCAwZlXrGZy0cuuI/edit"
-  - title: "Essay Review"
-    url: "https://docs.google.com/document/d/13SofYJmWFZ_Jxc_CVnqKMYKPp_nRrzUgjRA_q4u4lR8/edit"
+title: Mentorship
+links: []
 ---
 
-# Advising
+Our post-bacc pre-med student mentors are here to support you as you explore healthcare careers and plan your next steps.
 
-We offer various advising services to help premed students navigate their journey to medical school.
+## How It Works
 
-## 1-on-1 Advising
+Meet our mentors—current UCSD post-bacc students who have been through the pre-med path. They can share guidance on courses, applications, and life as a pre-med student. More structured programs like 1-on-1 advising and essay review are coming soon.
 
-Get personalized advice from our medical student mentors.
+## Get in Touch
 
-## Essay Review
-
-Have your personal statements and essays reviewed by experienced medical students.
+Reach out through our contact form or follow us on social media to stay updated on mentor availability and upcoming opportunities.

@@ -76,9 +76,9 @@ export default function AnimatedHero({ content }: HeroProps) {
   }, [])
 
   return (
-    <div className="relative bg-gradient-to-br from-blue-600 via-indigo-700 to-purple-800 text-white py-32 overflow-hidden">
-      {/* Animated gradient background */}
-      <div className="absolute inset-0 animate-gradient bg-gradient-to-br from-blue-600 via-indigo-700 to-purple-800"></div>
+    <div className="relative bg-gradient-to-br from-primary-600 via-primary-700 to-primary-800 text-white py-32 overflow-hidden">
+      {/* Animated gradient background - UCSD navy */}
+      <div className="absolute inset-0 animate-gradient bg-gradient-to-br from-primary-600 via-primary-700 to-primary-800"></div>
       
       {/* Canvas animation layer */}
       <canvas
@@ -117,48 +117,20 @@ export default function AnimatedHero({ content }: HeroProps) {
       </div>
 
       <div className="container mx-auto px-4 text-center relative z-10">
-        {/* Animated medical icon */}
-        <div className="mb-8 flex justify-center">
-          <div className="relative">
-            <div className="absolute inset-0 bg-white/20 rounded-full blur-xl animate-pulse-glow"></div>
-            <div className="relative bg-white/10 backdrop-blur-lg rounded-full p-6 border border-white/20 animate-heartbeat">
-              <svg className="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-              </svg>
-            </div>
-          </div>
-        </div>
-
         <h1 className="text-6xl md:text-8xl font-extrabold mb-6 leading-tight">
-          <span className="block bg-gradient-to-r from-white via-blue-100 to-cyan-200 bg-clip-text text-transparent drop-shadow-2xl">
+          <span className="block bg-gradient-to-r from-white via-primary-100 to-ucsd-sand bg-clip-text text-transparent drop-shadow-2xl">
             {content.title || "PRE-MED?"}
           </span>
-          <span className="block mt-2 text-5xl md:text-7xl bg-gradient-to-r from-cyan-200 via-blue-300 to-indigo-300 bg-clip-text text-transparent">
+          <span className="block mt-2 text-5xl md:text-7xl bg-gradient-to-r from-ucsd-gold via-primary-200 to-ucsd-blue bg-clip-text text-transparent">
             WE'RE HERE TO HELP
           </span>
         </h1>
         
         {content.subtitle && (
-          <p className="text-xl md:text-2xl text-blue-100 font-light mb-8 drop-shadow-lg max-w-2xl mx-auto">
+          <p className="text-xl md:text-2xl text-primary-100 font-light mb-8 drop-shadow-lg max-w-2xl mx-auto">
             {content.subtitle}
           </p>
         )}
-
-        {/* Floating stats badge */}
-        <div className="mt-12 inline-flex items-center gap-3 glass rounded-full px-8 py-4 border border-white/30 shadow-2xl animate-float">
-          <div className="relative">
-            <div className="absolute inset-0 bg-blue-400 rounded-full blur-md opacity-50 animate-pulse"></div>
-            <div className="relative w-10 h-10 bg-gradient-to-br from-blue-400 to-cyan-400 rounded-full flex items-center justify-center">
-              <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-              </svg>
-            </div>
-          </div>
-          <div className="text-left">
-            <div className="text-2xl font-bold">300+</div>
-            <div className="text-sm text-blue-100">Medical Student Mentors</div>
-          </div>
-        </div>
 
         {/* Scroll indicator */}
         <div className="mt-16 animate-bounce">

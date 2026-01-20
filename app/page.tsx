@@ -29,7 +29,7 @@ export default async function Home() {
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <div className="h-80 rounded-lg overflow-hidden bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50">
+              <div className="h-80 rounded-lg overflow-hidden bg-gradient-to-br from-primary-50 via-ucsd-sand to-primary-100">
                 <DNAHelix />
               </div>
             </CardContent>

@@ -15,7 +15,7 @@ export default async function AboutPage() {
   ]
   
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
+    <div className="min-h-screen bg-gradient-to-b from-ucsd-sand to-white">
       <div className="container mx-auto px-4 py-16">
         <div className="max-w-5xl mx-auto">
           {/* Header */}
@@ -27,7 +27,7 @@ export default async function AboutPage() {
               About Us
             </h1>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Learn about our mission to support pre-med students on their journey to medical school
+              Learn about our mission
             </p>
           </div>
 
@@ -38,7 +38,7 @@ export default async function AboutPage() {
             </CardHeader>
             <CardContent className="space-y-6">
               <p className="text-gray-700 leading-relaxed">
-                Med Path at UCSD is a group of over 300 medical students who are eager to share advice and resources with premed students at UCSD and beyond. We partner with the UCSD Career Center, the School of Medicine Office of Admissions, and the Office of Outreach & Pathway Programs to host student panels, provide 1-on-1 advising, and distribute free resources to all premed students at UCSD and beyond.
+                MedPath is a community of graduate pre-medical students committed to empowering students from underserved backgrounds who are interested in healthcare careers. By sharing the insight gained from our individual pre-medical paths, we provide mentorship, support, and access to opportunities that help students navigate their journey and realize their aspirations.
               </p>
               <div className="bg-primary-50 rounded-lg p-4">
                 <p className="text-gray-700">
@@ -61,7 +61,15 @@ export default async function AboutPage() {
                 <CardTitle className="text-3xl">Our Story</CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="prose prose-lg max-w-none prose-headings:text-gray-900 prose-p:text-gray-700 prose-a:text-primary-600 prose-a:no-underline hover:prose-a:underline">
+                <div className="prose prose-lg max-w-none break-words
+                  prose-headings:text-gray-900 prose-headings:font-semibold
+                  prose-h1:text-2xl prose-h1:mt-0 prose-h1:mb-4
+                  prose-h2:text-xl prose-h2:mt-10 prose-h2:mb-3
+                  prose-h3:text-lg prose-h3:mt-4 prose-h3:mb-2
+                  prose-p:text-gray-700 prose-p:leading-relaxed prose-p:my-3 prose-p:mb-5
+                  prose-ul:my-3 prose-ul:pl-6 prose-li:my-1
+                  prose-ol:my-3 prose-ol:pl-6
+                  prose-a:text-primary-600 prose-a:no-underline hover:prose-a:underline prose-a:break-all">
                   <ReactMarkdown>{content.content}</ReactMarkdown>
                 </div>
               </CardContent>

@@ -1,10 +1,8 @@
 {
-  "description": "Get in touch with Med Path at UCSD. Follow us on social media or reach out via email.",
-  "email": "contact@medpathucsd.edu",
+  "description": "Get in touch with Med Path. Follow us on social media or reach out via email.",
+  "email": "medpathorg@gmail.com",
   "socialLinks": {
-    "instagram": "https://instagram.com/medpathucsd",
-    "twitter": "https://twitter.com/medpathucsd",
-    "facebook": "https://facebook.com/medpathucsd",
+    "instagram": "https://instagram.com/medpath.mentorship",
     "googleForm": {
       "googleFormUrl": "https://docs.google.com/forms/d/e/1FAIpQLSf-VKVKCTtfB7RDlnmsHdkPggC4MYMWCC3xoV6ICjVmo3ydjw/viewform?embedded=true",
       "formTitle": "Contact Us",

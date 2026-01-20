@@ -1,6 +1,6 @@
-# Med Path at UCSD - Static Website with CMS
+# Med Path - Static Website with CMS
 
-A static website for Med Path at UCSD, built with Next.js and Decap CMS for easy content management.
+A static website for Med Path, built with Next.js and Decap CMS for easy content management.
 
 ## Features
 

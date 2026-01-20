@@ -61,18 +61,11 @@ export default function Hero({ content }: HeroProps) {
           </div>
         </div>
         <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight drop-shadow-lg">
-          {content.title || "PRE-MED? WE'RE HERE TO HELP"}
+          {content.title || "Interested in health care? We’re here to help!"}
         </h1>
         {content.subtitle && (
           <p className="text-xl md:text-2xl text-primary-50 font-light drop-shadow-md">{content.subtitle}</p>
         )}
-        {/* Medical mentorship badge */}
-        <div className="mt-8 inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-6 py-3 border border-white/20">
-          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-          </svg>
-          <span className="text-sm font-medium">300+ Medical Student Mentors</span>
-        </div>
       </div>
     </div>
   )

@@ -5,12 +5,12 @@ import { Users, Calendar } from 'lucide-react'
 
 export default function QuickLinks() {
   const links = [
-    { href: "/about", title: "About Us", icon: Users, color: "bg-blue-500" },
-    { href: "/events", title: "Upcoming Events", icon: Calendar, color: "bg-green-500" }
+    { href: "/about", title: "About Us", icon: Users, color: "bg-primary-600" },
+    { href: "/events", title: "Upcoming Events", icon: Calendar, color: "bg-ucsd-gold" }
   ]
 
   return (
-    <div className="relative py-20 bg-gradient-to-b from-slate-50 to-white">
+    <div className="relative py-20 bg-gradient-to-b from-ucsd-sand to-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-4 text-gray-900">

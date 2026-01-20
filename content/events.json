@@ -1,11 +1,22 @@
 {
   "events": [
     {
-      "title": "Sample Event",
-      "date": "2024-01-15",
-      "time": "6:00 PM",
-      "location": "UCSD Campus",
-      "description": "This is a sample event description."
+      "title": "Meet MedPath!",
+      "subtitle": "Panel 1",
+      "date": "2026-01-20",
+      "time": "12:15–12:45 PM (Lunch)",
+      "location": "Monte Vista High School, 3230 Sweetwater Springs Blvd, Spring Valley, CA 91977, Room S5",
+      "description": "Join us to learn more about MedPath: mentors here to help high school students navigate their interest in health care fields!",
+      "feedbackFormUrl": "https://docs.google.com/forms/d/e/1FAIpQLSe5_672iY78SLZ5M7w30GYQjLOjG4qO3Ek0Bg6mmmhgXAUPIg/viewform?usp=publish-editor"
+    },
+    {
+      "title": "Meet MedPath!",
+      "subtitle": "Panel 2",
+      "date": "2026-01-23",
+      "time": "12:15–12:45 PM (Lunch)",
+      "location": "Monte Vista High School, 3230 Sweetwater Springs Blvd, Spring Valley, CA 91977, Room S5",
+      "description": "Join us to learn more about MedPath: mentors here to help high school students navigate their interest in health care fields!",
+      "feedbackFormUrl": "https://docs.google.com/forms/d/e/1FAIpQLSe5_672iY78SLZ5M7w30GYQjLOjG4qO3Ek0Bg6mmmhgXAUPIg/viewform?usp=publish-editor"
     }
   ]
 }

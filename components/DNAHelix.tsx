@@ -23,8 +23,8 @@ function DNAStrand() {
     const colors1: number[] = []
     const colors2: number[] = []
 
-    const color1 = new THREE.Color(0x3b82f6) // Blue
-    const color2 = new THREE.Color(0x8b5cf6) // Purple
+    const color1 = new THREE.Color(0x182b49) // UCSD navy
+    const color2 = new THREE.Color(0x00629b) // UCSD blue
 
     for (let i = 0; i <= basePairs; i++) {
       const t = i / basePairs
@@ -76,8 +76,8 @@ function DNAStrand() {
 
     // Add spheres for base pairs
     const sphereGeometry = new THREE.SphereGeometry(0.08, 16, 16)
-    const sphereMaterial1 = new THREE.MeshBasicMaterial({ color: 0x60a5fa, transparent: true, opacity: 0.8 })
-    const sphereMaterial2 = new THREE.MeshBasicMaterial({ color: 0xa78bfa, transparent: true, opacity: 0.8 })
+    const sphereMaterial1 = new THREE.MeshBasicMaterial({ color: 0x182b49, transparent: true, opacity: 0.8 })
+    const sphereMaterial2 = new THREE.MeshBasicMaterial({ color: 0xc69214, transparent: true, opacity: 0.8 })
 
     for (let i = 0; i <= basePairs; i++) {
       const t = i / basePairs
@@ -167,7 +167,7 @@ export default function DNAHelix() {
       <Canvas camera={{ position: [0, 0, 6], fov: 50 }}>
         <ambientLight intensity={0.6} />
         <pointLight position={[10, 10, 10]} intensity={1} />
-        <pointLight position={[-10, -10, -10]} intensity={0.5} color="#8b5cf6" />
+        <pointLight position={[-10, -10, -10]} intensity={0.5} color="#C69214" />
         <DNAStrand />
         <FloatingMolecules />
         <OrbitControls 

@@ -1,9 +1,159 @@
 {
   "members": [
     {
-      "name": "Team Member 1",
-      "role": "President",
-      "bio": "Bio information here"
+      "name": "Yesenia Lara",
+      "role": "Founder & President",
+      "hometown": "San Diego, CA",
+      "education": "UCLA",
+      "major": "Psychobiology",
+      "minor": "Anthropology",
+      "motivation": "I wanted to create MedPath to inspire the next generation of high school students that are interested in a career in healthcare. Having mentors that supported me throughout my journey as a first gen has inspired me to give back to my community and provide students with new opportunities."
+    },
+    {
+      "name": "Jesse Camorlinga",
+      "role": "Vice President",
+      "hometown": "Lake Elsinore, CA",
+      "education": "UCSD",
+      "major": "Human Biology",
+      "motivation": "As a first-generation student, I had to navigate much of the pre-medical path on my own. Being a part of MedPath excites me because it allows me to guide and support students by connecting them with the resources and insight needed to pursue their goals."
+    },
+    {
+      "name": "Kayla Longoria",
+      "role": "Secretary",
+      "hometown": "East Bay",
+      "education": "UCSB",
+      "major": "Biology",
+      "motivation": "Any health-related careers are challenging, I am excited to be a constant source of support and mentorship in any way I can!"
+    },
+    {
+      "name": "Samantha Tsang",
+      "role": "Volunteer Coordinator",
+      "hometown": "San Diego, CA",
+      "education": "UCSC",
+      "major": "Molecular, Cellular, & Developmental Biology",
+      "motivation": "Pursuing medicine and navigating how to get to where I need to be came with a lot of hurdles that I had to encounter on my own. I want to give back to my community & future generations by making this knowledge more accessible and make this process a lot less daunting."
+    },
+    {
+      "name": "Ashley Kelly",
+      "role": "Social Media Coordinator",
+      "hometown": "Lancaster, CA",
+      "education": "UCSD",
+      "major": "Human Biology",
+      "motivation": "I'm excited to be a part of MedPath to be the mentor I never had in high school! As a first-gen student, I look forward to supporting students by sharing guidance and encouragement from my own experiences!"
+    },
+    {
+      "name": "Aiko Gervacio-Denda",
+      "role": "Website Manager",
+      "hometown": "Sunnyvale, CA",
+      "education": "UCD & UCSD",
+      "major": "Microbiology and Immunology",
+      "motivation": "I'm incredibly excited to help provide support and guidance to students who are interested in healthcare! Growing up, I didn't have people around me in healthcare, which made navigating this path challenging at times, but this made me especially motivated to help students grow not only professionally and academically, but personally as well!"
+    },
+    {
+      "name": "Alex",
+      "role": "Mentor",
+      "hometown": "Orange County, CA",
+      "education": "LMU",
+      "major": "Psychology",
+      "motivation": "I'm so excited to be a part of your journeys towards becoming doctors! I know how intimidating pursuing a career in medicine can be, so I look forward to supporting and sharing my own experiences as a mentor!"
+    },
+    {
+      "name": "Amber",
+      "role": "Mentor",
+      "hometown": "San Antonio, TX",
+      "education": "Texas A&M University",
+      "major": "Biology",
+      "motivation": "I'm excited to join MedPath to foster a sense of community for students who are interested in healthcare! As a first-gen student, college seemed daunting and hopefully through MedPath, this journey is less scary through our support!"
+    },
+    {
+      "name": "Clarissa",
+      "role": "Mentor",
+      "hometown": "San Ysidro, CA",
+      "education": "UCSD",
+      "major": "Human Biology",
+      "motivation": "I'm passionate about providing high school students personalized support as they navigate their career paths. Whether it's doing college applications, exploring opportunities, or building professional networks, I'm here to help every step of the way!"
+    },
+    {
+      "name": "Elizabeth",
+      "role": "Mentor",
+      "hometown": "San Diego, CA",
+      "education": "Loyola Marymount University",
+      "major": "Biochemistry",
+      "motivation": "I am excited to join MedPath to be able to help future medical students with big challenges and decisions. As a previous mentor and mentee, I am excited to share resources and insights to help pursue medicine."
+    },
+    {
+      "name": "Haley",
+      "role": "Mentor",
+      "hometown": "Pasadena, CA",
+      "education": "UCLA",
+      "major": "Neuroscience",
+      "motivation": "Mentoring students is one of my passions, and I'm excited to help expose you to the many paths into healthcare. I look forward to supporting you academically and beyond the classroom, helping to build confidence, resilience to begin to see medicine as an achievable future!"
+    },
+    {
+      "name": "Irina",
+      "role": "Mentor",
+      "hometown": "Rancho Cucamonga, CA",
+      "education": "UCR",
+      "major": "Microbiology",
+      "motivation": "I'm honored to be a part of MedPath and to nurture and support your growth into thoughtful, compassionate, and capable leaders who bring your own unique strengths to medicine."
+    },
+    {
+      "name": "Isabella",
+      "role": "Mentor",
+      "hometown": "Hacienda Heights, CA",
+      "education": "UC Berkeley",
+      "major": "Molecular Cell Biology",
+      "motivation": "This is such a hard path to take alone. As a first-gen student, I know how valuable first-hand experience can be. Although I'm still learning new things everyday, I am excited to provide guidance and support to make the journey easier!"
+    },
+    {
+      "name": "Jayden",
+      "role": "Mentor",
+      "hometown": "Pullman, WA",
+      "education": "UCSD",
+      "major": "Human Biology",
+      "minor": "Psychology",
+      "motivation": "I am excited to join MedPath to help other students get easy access to resources that will help them in the future and to make a connection while watching students grow and hopefully encourage others to want to go into medicine!"
+    },
+    {
+      "name": "Julissa",
+      "role": "Mentor",
+      "hometown": "San Diego, CA",
+      "education": "UCSD",
+      "major": "Human Biology",
+      "minor": "Language Studies Concentrated in Spanish",
+      "motivation": "I am super excited to be an extra support system as you navigate your way through high school and college! This is an exciting time in your life and I am here to guide you in any way you need! As a first-gen student, I understand the importance of having a mentor. I can share insights on how to navigate any hurdles you may encounter."
+    },
+    {
+      "name": "Sean",
+      "role": "Mentor",
+      "hometown": "Bakersfield, CA",
+      "education": "UCSB",
+      "major": "Biological Sciences",
+      "motivation": "Mentorship and exposure to the healthcare industry have made a huge difference in my journey. I look forward to sharing honest insight, guidance, and encouragement so that students feel more confident and less alone as they navigate their journey into healthcare."
+    },
+    {
+      "name": "Sidarth",
+      "role": "Mentor",
+      "hometown": "Campbell, CA",
+      "education": "UCSD",
+      "major": "Biochemistry/Cell Biology",
+      "motivation": "I'm excited to join MedPath because I know how hard it could be to figure out what you're passionate about without any guidance. I want to show high school students that there are always people willing to help and support them."
+    },
+    {
+      "name": "Ethan",
+      "role": "Mentor",
+      "hometown": "San Diego, CA",
+      "education": "UCSC",
+      "major": "Molecular, Developmental, and Cell Biology",
+      "motivation": "I look forward to helping a newer generation of medicine, especially as my own path was not traditional. I hope that my experiences can support driven students to start their own unique journey as a healthcare professional."
+    },
+    {
+      "name": "Suraj Somarajan",
+      "role": "Website Developer",
+      "hometown": "San Jose, CA",
+      "education": "UW Madison",
+      "major": "Computer Science",
+      "motivation": "im here for the vibes. I am the website developer"
     }
   ]
 }

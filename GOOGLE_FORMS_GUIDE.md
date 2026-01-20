@@ -34,7 +34,7 @@ Edit `content/contact.json` and add:
 
 ```json
 {
-  "description": "Get in touch with Med Path at UCSD...",
+  "description": "Get in touch with Med Path...",
   "email": "contact@medpathucsd.edu",
   "googleForm": {
     "googleFormUrl": "https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?embedded=true",

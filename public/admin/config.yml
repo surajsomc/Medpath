@@ -49,10 +49,16 @@ collections:
               - label: "Role"
                 name: "role"
                 widget: "string"
+              - { label: "Hometown", name: "hometown", widget: "string", required: false }
+              - { label: "Education", name: "education", widget: "string", required: false }
+              - { label: "Major", name: "major", widget: "string", required: false }
+              - { label: "Minor", name: "minor", widget: "string", required: false }
+              - { label: "Motivation", name: "motivation", widget: "text", required: false }
               - label: "Bio"
                 name: "bio"
                 widget: "text"
                 required: false
+                hint: "Fallback when no structured fields; optional if using Hometown/Education/Motivation"
 
   - name: "events"
     label: "Events"
@@ -68,6 +74,11 @@ collections:
               - label: "Title"
                 name: "title"
                 widget: "string"
+              - label: "Subtitle"
+                name: "subtitle"
+                widget: "string"
+                required: false
+                hint: "Optional. Shown below the title (e.g. Panel 1, Panel 2)."
               - label: "Date"
                 name: "date"
                 widget: "datetime"
@@ -82,6 +93,11 @@ collections:
               - label: "Description"
                 name: "description"
                 widget: "text"
+              - label: "Feedback Form URL"
+                name: "feedbackFormUrl"
+                widget: "string"
+                required: false
+                hint: "Optional. Shown below the description in smaller text (e.g. After-Panel Event Feedback Form)."
 
   - name: "advising"
     label: "Advising Page"
@@ -117,9 +133,11 @@ collections:
           - label: "Title"
             name: "title"
             widget: "string"
+          - { label: "URL", name: "url", widget: "string", required: false }
           - label: "Path"
             name: "path"
             widget: "string"
+            required: false
           - label: "Description"
             name: "description"
             widget: "text"
@@ -175,13 +193,5 @@ collections:
         fields:
           - label: "Instagram"
             name: "instagram"
-            widget: "string"
-            required: false
-          - label: "Twitter"
-            name: "twitter"
-            widget: "string"
-            required: false
-          - label: "Facebook"
-            name: "facebook"
             widget: "string"
             required: false

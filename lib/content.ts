@@ -33,14 +33,14 @@ function getDefaultContent(filename: string) {
   const defaults: Record<string, any> = {
     'home.json': {
       hero: {
-        title: "PRE-MED? WE'RE HERE TO HELP",
+        title: "Interested in health care? We’re here to help!",
         subtitle: ''
       },
       logo: '/logo.png',
-      description: 'Med Path at UCSD is a group of over 300 medical students who are eager to share advice and resources with premed students at UCSD and beyond. We partner with the UCSD Career Center, the School of Medicine Office of Admissions, and the Office of Outreach & Pathway Programs to host student panels, provide 1-on-1 advising, and distribute free resources to all premed students at UCSD and beyond.'
+      description: 'Med Path is a group of medical students who are eager to share advice and resources with premed students at UCSD and beyond. We partner with the UCSD Career Center, the School of Medicine Office of Admissions, and the Office of Outreach & Pathway Programs to host student panels, provide 1-on-1 advising, and distribute free resources to all premed students at UCSD and beyond.'
     },
     'about.json': {
-      content: '# About Us\n\nMed Path at UCSD is dedicated to supporting premed students on their journey to medical school.'
+      content: '# About Us\n\nMed Path is dedicated to supporting premed students on their journey to medical school.'
     },
     'team.json': {
       members: []
@@ -64,23 +64,17 @@ function getDefaultContent(filename: string) {
     'resources.json': {
       sections: [
         {
-          title: 'Pre-Med Guide',
-          path: '/resources/pre-med-guide',
-          subsections: [
-            { title: 'Overview', path: '/resources/pre-med-guide' },
-            { title: 'Application Process', path: '/resources/pre-med-guide/application' },
-            { title: 'Course Requirements', path: '/resources/pre-med-guide/courses' }
-          ]
+          title: 'After-Panel Event Feedback Form',
+          description: 'Share your feedback after attending a MedPath panel.',
+          url: 'https://docs.google.com/forms/d/e/1FAIpQLSe5_672iY78SLZ5M7w30GYQjLOjG4qO3Ek0Bg6mmmhgXAUPIg/viewform?usp=publish-editor'
         }
       ]
     },
     'contact.json': {
       description: 'Get in touch with Med Path at UCSD',
-      email: 'contact@medpathucsd.edu',
+      email: 'medpathorg@gmail.com',
       socialLinks: {
-        instagram: 'https://instagram.com/medpathucsd',
-        twitter: 'https://twitter.com/medpathucsd',
-        facebook: 'https://facebook.com/medpathucsd'
+        instagram: 'https://instagram.com/medpath.mentorship'
       }
     }
   }

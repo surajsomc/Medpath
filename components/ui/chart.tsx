@@ -1,5 +1,6 @@
 import * as React from "react"
 import * as RechartsPrimitive from "recharts"
+import type { TooltipContentProps, DefaultLegendContentProps } from "recharts"
 import { cn } from "@/lib/utils"
 
 const THEMES = { light: "", dark: ".dark" } as const
@@ -7,7 +8,7 @@ const THEMES = { light: "", dark: ".dark" } as const
 export type ChartConfig = {
   [k in string]: {
     label?: React.ReactNode
-    icon?: React.ComponentType
+    icon?: React.ComponentType<{ className?: string }>
   } & (
     | { color?: string; theme?: never }
     | { color?: never; theme: { light: string; dark: string } }
@@ -96,9 +97,11 @@ ${colorConfig
 
 const ChartTooltip = RechartsPrimitive.Tooltip
 
+type InjectedTooltipProps = 'active' | 'payload' | 'coordinate' | 'accessibilityLayer' | 'activeIndex'
 const ChartTooltipContent = React.forwardRef<
   HTMLDivElement,
-  React.ComponentProps<typeof RechartsPrimitive.Tooltip> &
+  Omit<TooltipContentProps<number | string, string>, InjectedTooltipProps> &
+    Partial<Pick<TooltipContentProps<number | string, string>, InjectedTooltipProps>> &
     React.ComponentProps<"div"> & {
       hideLabel?: boolean
       hideIndicator?: boolean
@@ -251,7 +254,7 @@ const ChartLegend = RechartsPrimitive.Legend
 const ChartLegendContent = React.forwardRef<
   HTMLDivElement,
   React.ComponentProps<"div"> &
-    Pick<RechartsPrimitive.LegendProps, "payload" | "verticalAlign"> & {
+    Pick<DefaultLegendContentProps, "payload" | "verticalAlign"> & {
       hideIcon?: boolean
       nameKey?: string
     }

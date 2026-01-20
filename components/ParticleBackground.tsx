@@ -1,14 +1,17 @@
 'use client'
 
-import { useCallback } from 'react'
-import Particles from '@tsparticles/react'
+import { useEffect, useState } from 'react'
+import Particles, { initParticlesEngine } from '@tsparticles/react'
 import { loadSlim } from '@tsparticles/slim'
-import type { Engine } from '@tsparticles/engine'
 import type { ISourceOptions } from '@tsparticles/engine'
 
 export default function ParticleBackground() {
-  const particlesInit = useCallback(async (engine: Engine) => {
-    await loadSlim(engine)
+  const [init, setInit] = useState(false)
+
+  useEffect(() => {
+    initParticlesEngine(async (engine) => {
+      await loadSlim(engine)
+    }).then(() => setInit(true))
   }, [])
 
   const options: ISourceOptions = {
@@ -28,7 +31,7 @@ export default function ParticleBackground() {
           enable: true,
           mode: 'repulse',
         },
-        resize: true,
+        resize: { enable: true },
       },
       modes: {
         push: {
@@ -64,7 +67,8 @@ export default function ParticleBackground() {
       number: {
         density: {
           enable: true,
-          area: 800,
+          width: 1000,
+          height: 1000,
         },
         value: 50,
       },
@@ -81,10 +85,11 @@ export default function ParticleBackground() {
     detectRetina: true,
   }
 
+  if (!init) return null
+
   return (
     <Particles
       id="tsparticles"
-      init={particlesInit}
       options={options}
       className="absolute inset-0 -z-10"
     />

@@ -103,8 +103,14 @@ export async function getEventsContent() {
   return readJSONFile('events.json')
 }
 
-export async function getAdvisingContent() {
-  return readMarkdownFile('advising.md')
+export interface AdvisingContent {
+  content: string
+  title?: string
+  links?: Array<{ title: string; url: string }>
+}
+
+export async function getAdvisingContent(): Promise<AdvisingContent> {
+  return readMarkdownFile('advising.md') as AdvisingContent
 }
 
 export async function getResourcesContent() {

@@ -1,9 +1,10 @@
 # Local/dev: no login. Use with npx decap-server. Overrides config.yml when not prod.
+# When local_backend is true, Decap CMS uses the proxy server and bypasses authentication
 local_backend: true
 
 backend:
-  name: git-gateway
-  branch: main
+  name: proxy
+  proxy_url: http://localhost:8081/api/v1
 
 media_folder: public/images
 public_folder: /images

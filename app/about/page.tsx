@@ -9,7 +9,7 @@ export default async function AboutPage() {
   const content = await getAboutContent()
   
   const values = [
-    { icon: Heart, title: "Compassion", description: "We care deeply about every pre-med student's journey" },
+    { icon: Heart, title: "Compassion", description: "We care deeply about every student's journey to their career" },
     { icon: Users, title: "Community", description: "Building a supportive network of future medical professionals" },
     { icon: Target, title: "Excellence", description: "Helping you achieve your highest potential" }
   ]
@@ -42,7 +42,7 @@ export default async function AboutPage() {
               </p>
               <div className="bg-primary-50 rounded-lg p-4">
                 <p className="text-gray-700">
-                  Follow us <strong className="text-primary-600">@medpathucsd</strong> on social media!
+                  Follow us <strong className="text-primary-600">@medpath.mentorship</strong> on social media!
                 </p>
               </div>
               <Button asChild>
@@ -61,15 +61,14 @@ export default async function AboutPage() {
                 <CardTitle className="text-3xl">Our Story</CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="prose prose-lg max-w-none break-words
-                  prose-headings:text-gray-900 prose-headings:font-semibold
-                  prose-h1:text-2xl prose-h1:mt-0 prose-h1:mb-4
-                  prose-h2:text-xl prose-h2:mt-10 prose-h2:mb-3
-                  prose-h3:text-lg prose-h3:mt-4 prose-h3:mb-2
-                  prose-p:text-gray-700 prose-p:leading-relaxed prose-p:my-3 prose-p:mb-5
-                  prose-ul:my-3 prose-ul:pl-6 prose-li:my-1
-                  prose-ol:my-3 prose-ol:pl-6
-                  prose-a:text-primary-600 prose-a:no-underline hover:prose-a:underline prose-a:break-all">
+                <div className="max-w-none break-words text-gray-700 leading-relaxed
+                  [&>p]:my-3 [&>p]:mb-5
+                  [&>h1]:text-2xl [&>h1]:font-semibold [&>h1]:mt-0 [&>h1]:mb-4
+                  [&>h2]:text-xl [&>h2]:font-semibold [&>h2]:mt-10 [&>h2]:mb-3
+                  [&>h3]:text-lg [&>h3]:font-semibold [&>h3]:mt-6 [&>h3]:mb-2
+                  [&>ul]:my-3 [&>ul]:pl-6 [&>li]:my-1
+                  [&>ol]:my-3 [&>ol]:pl-6
+                  [&_a]:text-primary-600 [&_a]:no-underline hover:[&_a]:underline [&_a]:break-all">
                   <ReactMarkdown>{content.content}</ReactMarkdown>
                 </div>
               </CardContent>

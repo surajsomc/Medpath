@@ -55,8 +55,12 @@ export default async function EventsPage() {
 
           {/* Calendar with highlighted event days */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-            <EventsCalendar events={content.events} year={curY} month={curM} />
-            <EventsCalendar events={content.events} year={nextY} month={nextM} />
+            <div className="max-w-sm mx-auto w-full">
+              <EventsCalendar events={content.events} year={curY} month={curM} />
+            </div>
+            <div className="max-w-sm mx-auto w-full">
+              <EventsCalendar events={content.events} year={nextY} month={nextM} />
+            </div>
           </div>
 
           {/* Event list */}
@@ -71,7 +75,7 @@ export default async function EventsPage() {
             <div className="space-y-6">
               <h2 className="text-2xl font-bold text-gray-900">Event details</h2>
               {content.events.map((event: any, index: number) => (
-                <Card key={index} className="shadow-md hover:shadow-lg transition-shadow border-0">
+                <Card key={index} className="shadow-md hover:shadow-lg transition-shadow border-0 flex flex-col">
                   <CardHeader>
                     <div className="flex-1">
                       <div className="mb-3">
@@ -107,15 +111,24 @@ export default async function EventsPage() {
                       </div>
                     </div>
                   </CardHeader>
-                  <CardContent>
+                  <CardContent className="flex-1 flex flex-col">
                     <p className="text-gray-700 leading-relaxed">{linkify(event.description || '')}</p>
                     {event.feedbackFormUrl && (
-                      <p className="text-sm text-gray-600 mt-3">
-                        After-Panel Event Feedback Form:{' '}
-                        <a href={event.feedbackFormUrl} target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:underline">
-                          {event.feedbackFormUrl}
-                        </a>
-                      </p>
+                      <div className="mt-auto pt-4">
+                        <div className="rounded-lg border border-primary-200 bg-primary-50 px-4 py-3">
+                          <p className="text-xs font-semibold text-primary-700 uppercase tracking-wider mb-1">
+                            After-Panel Event Feedback Form
+                          </p>
+                          <a
+                            href={event.feedbackFormUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-2 font-medium text-primary-700 hover:text-primary-800 hover:underline break-all"
+                          >
+                            {event.feedbackFormUrl}
+                          </a>
+                        </div>
+                      </div>
                     )}
                   </CardContent>
                 </Card>

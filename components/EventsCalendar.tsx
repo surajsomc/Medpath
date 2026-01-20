@@ -37,7 +37,7 @@ export function EventsCalendar({ events, year, month }: Props) {
   }
 
   const emptyCells = Array.from({ length: firstWeekday }, (_, i) => (
-    <div key={`empty-${i}`} className="aspect-square p-1" />
+    <div key={`empty-${i}`} className="aspect-square p-0.5" />
   ))
   const dayCells = Array.from({ length: daysInMonth }, (_, i) => {
     const day = i + 1
@@ -45,7 +45,7 @@ export function EventsCalendar({ events, year, month }: Props) {
     return (
       <div
         key={day}
-        className={`aspect-square p-1 flex items-center justify-center rounded-lg text-sm
+        className={`aspect-square p-0.5 flex items-center justify-center rounded-md text-xs
           ${hasEvent ? 'bg-primary-100 text-primary-700 font-semibold ring-2 ring-primary-400' : 'text-gray-700'}`}
       >
         {day}
@@ -55,13 +55,13 @@ export function EventsCalendar({ events, year, month }: Props) {
   const allCells = [...emptyCells, ...dayCells]
 
   return (
-    <div className="bg-white rounded-xl border border-gray-200 p-4 shadow-sm">
-      <h3 className="text-lg font-semibold text-gray-900 mb-3">
+    <div className="bg-white rounded-xl border border-gray-200 p-3 shadow-sm">
+      <h3 className="text-base font-semibold text-gray-900 mb-2">
         {MONTHS[month - 1]} {year}
       </h3>
       <div className="grid grid-cols-7 gap-0.5">
         {WEEKDAYS.map((d) => (
-          <div key={d} className="p-1 text-center text-xs font-medium text-gray-500">
+          <div key={d} className="p-0.5 text-center text-[11px] font-medium text-gray-500">
             {d}
           </div>
         ))}

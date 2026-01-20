@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { getContactContent } from '@/lib/content'
+import { Resend } from 'resend'
 
 export async function POST(request: NextRequest) {
   try {
@@ -43,19 +44,28 @@ ${message}
 This message was sent from the contact form on the Med Path website.
     `.trim()
 
-    // Option 1: Use Resend (recommended - add to package.json: npm install resend)
-    // Uncomment and configure if using Resend
-    /*
-    const { Resend } = require('resend')
-    const resend = new Resend(process.env.RESEND_API_KEY)
-    
+    // Send email via Resend (no SMTP).
+    // Requires:
+    // - RESEND_API_KEY
+    // - RESEND_FROM (optional; defaults to onboarding@resend.dev)
+    const resendApiKey = process.env.RESEND_API_KEY
+    if (!resendApiKey) {
+      return NextResponse.json(
+        { error: 'Email sending is not configured (missing RESEND_API_KEY).' },
+        { status: 501 }
+      )
+    }
+
+    const resend = new Resend(resendApiKey)
+    const from = process.env.RESEND_FROM || 'onboarding@resend.dev'
+
     await resend.emails.send({
-      from: 'contact@yourdomain.com',
+      from,
       to: recipientEmail,
+      replyTo: email,
       subject: emailSubject,
       text: emailBody,
     })
-    */
 
     // Option 2: Use Nodemailer (requires SMTP configuration)
     // Uncomment and configure if using Nodemailer
@@ -78,19 +88,6 @@ This message was sent from the contact form on the Med Path website.
       text: emailBody,
     })
     */
-
-    // Option 3: Use a third-party service like Formspree, EmailJS, etc.
-    // You can make an HTTP request to their API here
-
-    // For now, we'll log the email (you should replace this with actual email sending)
-    console.log('=== CONTACT FORM SUBMISSION ===')
-    console.log('To:', recipientEmail)
-    console.log('Subject:', emailSubject)
-    console.log('Body:', emailBody)
-    console.log('===============================')
-
-    // In development, return success. In production, implement actual email sending.
-    // TODO: Replace console.log with actual email service integration
 
     return NextResponse.json(
       { 

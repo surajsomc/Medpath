@@ -54,13 +54,9 @@ export default async function EventsPage() {
           </div>
 
           {/* Calendar with highlighted event days */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-            <div className="max-w-sm mx-auto w-full">
-              <EventsCalendar events={content.events} year={curY} month={curM} />
-            </div>
-            <div className="max-w-sm mx-auto w-full">
-              <EventsCalendar events={content.events} year={nextY} month={nextM} />
-            </div>
+          <div className="flex flex-col md:flex-row justify-center items-start gap-4 md:gap-6 mb-8">
+            <EventsCalendar events={content.events} year={curY} month={curM} />
+            <EventsCalendar events={content.events} year={nextY} month={nextM} />
           </div>
 
           {/* Event list */}

@@ -1,14 +1,13 @@
 {
   "description": "Get in touch with Med Path. Follow us on social media or reach out via email.",
-  "email": "medpathorg@gmail.com",
+  "email": "surajsomc@gmail.com",
   "socialLinks": {
     "instagram": "https://instagram.com/medpath.mentorship",
     "googleForm": {
-      "googleFormUrl": "https://docs.google.com/forms/d/e/1FAIpQLSf-VKVKCTtfB7RDlnmsHdkPggC4MYMWCC3xoV6ICjVmo3ydjw/viewform?embedded=true",
+      "googleFormUrl": "https://docs.google.com/forms/d/e/1FAIpQLSdYcWOncYS8LCnG_UqCYsLqImr3dM-GLs7I21N9GKDJJU9Rcg/viewform?usp=dialog",
       "formTitle": "Contact Us",
       "formDescription": "Fill out this form...",
       "formHeight": 1200
     }
   }
- 
 }

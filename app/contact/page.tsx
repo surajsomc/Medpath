@@ -1,5 +1,5 @@
 import { getContactContent } from '@/lib/content'
-import ContactForm from '@/components/ContactForm'
+import GoogleFormEmbed from '@/components/GoogleFormEmbed'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Mail, Info, Send, Instagram, ExternalLink } from 'lucide-react'
@@ -80,8 +80,12 @@ export default async function ContactPage() {
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <div className="max-w-2xl mx-auto [&_button[type=submit]]:bg-primary-600 [&_button[type=submit]]:hover:bg-primary-700 [&_button[type=submit]]:text-white [&_button[type=submit]]:border-0">
-                <ContactForm />
+              <div className="max-w-3xl mx-auto">
+                <GoogleFormEmbed
+                  formUrl={content?.socialLinks?.googleForm?.googleFormUrl || ''}
+                  height={content?.socialLinks?.googleForm?.formHeight || 1200}
+                  title={content?.socialLinks?.googleForm?.formTitle || 'Contact Us'}
+                />
               </div>
             </CardContent>
           </Card>

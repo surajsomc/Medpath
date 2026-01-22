@@ -1,7 +1,7 @@
 "use client"
 
 import * as React from "react"
-import { ChevronLeftIcon, ChevronRightIcon } from "lucide-react"
+import { ChevronDownIcon, ChevronLeftIcon, ChevronRightIcon } from "lucide-react"
 import { DayButton, DayPicker, getDefaultClassNames } from "react-day-picker"
 
 import { cn } from "@/lib/utils"
@@ -136,7 +136,9 @@ function Calendar({
             )
           }
 
-          return null
+          return (
+            <ChevronDownIcon className={cn("size-4", className)} {...props} />
+          )
         },
         DayButton: CalendarDayButton,
         ...components,
